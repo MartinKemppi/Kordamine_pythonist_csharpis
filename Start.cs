@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -185,50 +185,58 @@ namespace Kordamine_pythonist_csharpis
             {
                 Console.WriteLine("Olete kesksuurusega.");
             }
-            else
+            else if (kõrgus >180)
             {
                 Console.WriteLine("Olete suur.");
+            }
+            else 
+            {
+                Console.WriteLine("Kirjutage õige number");
             }
             */
             /*
             //7
             Console.WriteLine("Palun sisestage oma pikkus (sentimeetrites):");
-            double height = double.Parse(Console.ReadLine());
+            double kõrgus = double.Parse(Console.ReadLine());
             Console.WriteLine("Palun sisestage oma sugu (mees/naine):");
             string sugu = Console.ReadLine();
 
             if (sugu == "mees")
             {
-                if (height < 170)
+                if (kõrgus < 160)
                 {
                     Console.WriteLine("Olete lühike.");
                 }
-                else if (height >= 170 && height <= 185)
+                else if (kõrgus >= 160 && kõrgus <= 180)
                 {
                     Console.WriteLine("Olete kesksuurusega.");
                 }
-                else
+                else if (kõrgus > 180)
+                {
+                    Console.WriteLine("Olete suur.");
+                }
+            }
+            else if (sugu == "naine")
+            {
+                if (kõrgus < 160)
+                {
+                    Console.WriteLine("Olete lühike.");
+                }
+                else if (kõrgus >= 160 && kõrgus <= 175)
+                {
+                    Console.WriteLine("Olete kesksuurusega.");
+                }
+                else if (kõrgus > 175)
                 {
                     Console.WriteLine("Olete suur.");
                 }
             }
             else
             {
-                if (height < 160)
-                {
-                    Console.WriteLine("Olete lühike.");
-                }
-                else if (height >= 160 && height <= 175)
-                {
-                    Console.WriteLine("Olete kesksuurusega.");
-                }
-                else
-                {
-                    Console.WriteLine("Olete suur.");
-                }
+                Console.WriteLine("Kirjuta õige oma sugu.");
             }
             */
-            /*
+            
             //8
             double piimahind = 1.5;
             double leibahind = 2.0;
@@ -258,8 +266,7 @@ namespace Kordamine_pythonist_csharpis
                 koguhind += juustuhind;
             }
 
-            Console.WriteLine("Teie ostu kogumaksumus on: " + koguhind + " eurot.");
-            */
+            Console.WriteLine("Teie ostu kogumaksumus on: " + koguhind + " eurot.");            
 
         }
     }
